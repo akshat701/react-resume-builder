@@ -7,7 +7,8 @@ import { db, storage } from '../config/firebase.config';
 import { upload } from '@testing-library/user-event/dist/upload';
 import { adminIds, initialTags } from '../utilis/helpers';
 import { deleteDoc, doc, serverTimestamp, setDoc } from 'firebase/firestore';
-import {useTemplates,useUser} from '../hooks/useTemplates';
+import useTemplates from '../hooks/useTemplates';
+import useUser from '../hooks/useTemplates';
 import { remove } from 'firebase/database';
 import { useNavigate } from 'react-router-dom';
 const CreateTemplate = () => {
