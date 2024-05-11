@@ -1,13 +1,481 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Mooli:regular);
+body{
+    width: 100ww;
+    overflow-x: hidden;
+    background: #f1f1f1;
+    height: auto;
+    font-family: "Mooli",sans-serif ,system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+     sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+    width:50px;
+}
+/*w-full flex items-center justify-between border-t border-gray-300*/
+.footer{
+    display: flex;
+    background-color: gray;
+    height: 0.5px;
+    width: 1500px;
+    margin-top: 40%;
+}
+.imge{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+.ex{
+    margin-top: 5%;
+}
+.footerextra{
+    display:flex;
+
+    color: rgb(118, 118, 231);
+    justify-content: space-evenly;
+    margin-left: 60%;
+}
+#home2{
+    
+    margin-left: 10%;
+ 
+}
+#home3{
+
+    white-space: nowrap;
+    margin-left: 10%;
+    
+ 
+}
+.authentication{
+    margin-left: 40%;
+    margin-top: 10%;
+   
+}
+h1{
+    color: blue;
+    font-size: 35px;;
+}
+p{
+    color: gray;
+    margin-left: 10%;
+}
+h2{
+    color: grey;
+    font-size: 20px;
+    margin-left: 16%;
+}
+.authprovider{
+    display: flex;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+   width: 300px;
+   cursor: pointer;
+    margin-left: 12%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: black;
+    justify-content: space-between;
+}
+.authprovider:hover{
+    background-color: blue;
+    
+    
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+}
+
+.he{
+    display:flex;
+    margin-left:1% ;
+}
+.headin{
+    margin-left: 2.5%;
+       
+}
+input{
+    margin-top: 1%;
+    width: 1200px;
+    border: 0.5px solid grey;
+    height: 35px;
+    background-color: rgb(202, 197, 197);
+    border-radius: 5px;
+}
+.head{
+    
+    
+    background-color: gray;
+    height: 0.3px;
+    width: 1500px;
+    
+}
+.he1{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.he2{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.he3{
+    color: #f1f1f1;
+}
+.he4{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.he5{
+    position: relative;
+}
+.he6{
+   
+    width: 300px;
+    height: 280px;
+    padding-right: 40%;
+    position: absolute;
+    background-color: grey;
+    margin-left: 0px;
+    margin-top: 14%;
+    display: flex;
+    justify-content: center;
+   
+    
+    
+}
+.he7{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.he8{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    cursor: pointer;
+}
+.he9{
+    
+    
+    margin-top: 0%;
+    color: black;
+    margin-right: 20%;
+    font-size: 100%;
+    margin-left: 30%;
+}
+.he10{
+    
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-right: 60%;
+}
+.he11{
+    margin-left: 10%;
+    font-size: large;
+}
+.he12{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: rgb(87, 83, 83);
+}
+.he13{
+    margin-top: 10px;
+    color: rgb(87, 83, 83);
+    cursor: pointer;
+}
+.he14{
+    background-color: rgb(87, 83, 83);;
+    color: rgb(87, 83, 83);
+    margin-top: 20px;
+    height: 0.3px;
+    width: 200px;
+    display: flex;
+}
+.he15{
+    margin-left: 20%;
+    margin-top: 15px;
+    text-decoration-color: light;
+    color: rgb(87, 83, 83);
+    cursor: pointer;
+}
+.he16{
+    
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.he17{
+    
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* createtemplate */
+.he18{
+    width: 100%;
+    padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+}
+.he19{
+        grid-column: span 12 / span 12;
+
+        grid-column: span 4 / span 4;
+
+        grid-column: span 3 / span 3;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * var(--tw-space-y-reverse));
+            margin-bottom: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+}
+
+.he20{
+    grid-column: span 12 / span 12;
+
+    grid-column: span 8 / span 8;
+
+    grid-column: span 9 / span 9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.he21{
+    width: 100%;
+}
+.he22{
+    font-size: 1.125rem;
+    color: black
+}
+.he23{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.he24{
+    font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.he25{
+    font-size: 0.875rem;
+    color: black;
+    font-size: large;
+}
+.he26{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-radius: 0.375rem;
+        background-color: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d1d5db;
+        font-size: 1.125rem; /* Adjust as per your design system */
+        color: black;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        outline: none;
+      
+}
+.he27{
+    width: 100%;
+    background-color: rgb(247, 244, 244);
+        backdrop-filter: blur(4px);
+        height: 420px;
+        height: 620px;
+        height: 740px;
+        border-radius: 0.375rem;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: #d1d5db;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+}
+.he28{
+    display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin-top: 4px;
+}
+.he29{
+    color: #498fcd;
+    size: 40px;
+}
+.he30{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+.he31{
+    display: flex; 
+  flex-direction: column; 
+    align-items: center;
+  justify-content: center; 
+  height: 100%;
+  width: 100%;
+}
+.he32{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    flex-direction: column;
+}
+.he33{
+    font-size: 1.5rem; 
+}
+.he34{
+    margin-left: 0;
+}
+.he35{
+    width: 0;
+    height: 0;
+}
+.he36{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.375rem;
+}
+.he37{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.he38{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    cursor: pointer;
+}
+.he39{
+    font-size: 0.800rem;
+    color: #fff;
+}
+.he40{
+    width: 100%;
+    display:inline;
+    flex-wrap: wrap;
+    font-size: small;
+    margin: 2px;
+}
+.he41{
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    border-radius: 0.375rem;
+    padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.he42{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.he43{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.he44{
+    font-size: 1.25rem; 
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: var(--txtPrimary);
+}
+.he45{
+    width: 100%;
+    height: 500px;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    position: relative;
+}
+.he46{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.he47{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+    @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+    gap: 1rem; 
 }
